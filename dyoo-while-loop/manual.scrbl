@@ -1,6 +1,5 @@
 #lang scribble/manual
-@(require planet/scribble
-          (for-label "main.rkt"
+@(require (for-label "main.rkt"
                      racket/base))
 
 @title{While loops for Racket}
@@ -10,11 +9,11 @@ This basically provides @racket[while], @racket[break] and
 
 
 @section{Example and usage}
-@defmodule/this-package[main]
+@defmodule[dyoo-while-loop]
 
 @codeblock|{
 #lang racket/base
-(require (planet dyoo/while-loop))
+(require dyoo-while-loop)
 
 (while (not (string=? (read-line)
                       "quit"))
